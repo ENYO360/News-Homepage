@@ -1,0 +1,153 @@
+nav {
+    background-color: none; 
+}
+
+
+header {
+    /*padding: 2% 0;
+    margin: 0% 8%;*/
+}
+
+
+.__navbar {
+        /*margin-left: 40%;
+        width: 520px;*/
+        
+}
+
+
+.__navbar {
+    list-style: none;
+}
+
+.nav__link {
+        text-decoration: none;
+        color: rgb(117, 116, 116, 0.6);
+        font-weight: bolder;
+        font-size: 18px;
+}
+
+.nav__link:hover {
+    color: rgba(220, 61, 40, 1);
+}
+
+.nav-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.__navbar {
+    display: flex;
+    gap: 3em;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+
+/* Navigation Toggle */
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+
+    position: absolute;
+    inset: 0rem 0rem 0rem 13rem;
+    background-color: white;
+    box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05), 0 0 0 100vmax rgb(0, 0, 0,  0.65);
+  }
+
+  .primary-header {
+    padding-top: 1rem;
+  }
+
+  /*.primary-navigation::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }*/
+
+  .__navbar {
+    display: grid;
+    padding: 10rem 2rem;
+  }
+
+  .__navbar a {
+    text-align: left;
+    color: black;
+    font-family: inter-regular, sans-serif;
+    font-weight: 900;
+  }
+
+  .primary-navigation[data-visible] {
+    display: block;
+    position: fixed;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .__navbar {
+    display: grid;
+
+  }
+
+  .mobile-nav-toggle {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    display: block;
+    position: fixed;
+    right: 1rem;
+    z-index: 999;
+    aspect-ratio: 1;
+    width: 2.3rem;
+
+    background-image: url("/images/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("/images/icon-menu-close.svg");
+  }
+
+  .mobile-nav-toggle .menu-icon-close {
+    display: none;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .primary-navigation {
+    inset: 0rem 0rem 0rem 22rem;
+  }
+}
+@media (max-width: 21.8em) {
+  .primary-navigation {
+    inset: 0rem 0rem 0rem 5.5rem;
+  }
+}
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
